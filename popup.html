@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="popup">
+    <div id="current-tab-section">
+      <div id="origin-display"></div>
+      <label id="toggle-label" class="toggle">
+        <input type="checkbox" id="cors-toggle">
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+
+    <div id="disabled-message" class="hidden">
+      CORS toggle is not available for this page.
+    </div>
+
+    <div id="error-message" class="hidden"></div>
+
+    <div id="origins-section" class="hidden">
+      <div id="origins-header">Active origins</div>
+      <ul id="origins-list"></ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
